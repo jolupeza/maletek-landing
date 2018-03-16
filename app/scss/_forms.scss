@@ -16,3 +16,20 @@
     background-color: transparent;
   }
 }
+.Form__loader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.Form__group {
+  &.has-feedback {
+    &.has-error {
+      .Form__control {
+        border-bottom-color: darken($firstColor, 5%);
+      }
+      .help-block {
+        color: $firstColor;
+      }
+    }
+  }
+}

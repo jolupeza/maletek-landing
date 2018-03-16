@@ -3,6 +3,9 @@
   min-height: 100vh;
 }
 .Portada__left, .Portada__right {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center 0;
   background-size: 100%;
   width: 50%;
   .carousel-inner, .carousel-item {
@@ -10,10 +13,10 @@
   }
 }
 .Portada__left {
-  background: transparent url('./../images/bg-slider-yellow.jpg') center 0 no-repeat;
+  background-image: url('./../images/bg-slider-yellow.jpg');
 }
 .Portada__right {
-  background: transparent url('./../images/bg-slider-green.jpg') center 0 no-repeat;
+  background-image: url('./../images/bg-slider-green.jpg');
 }
 .Portada__content {
   align-items: center;

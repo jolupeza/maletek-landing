@@ -1,6 +1,9 @@
 // Bootstrap
 @import './../../node_modules/bootstrap/scss/bootstrap';
 
+@import "formValidation";
+@import "./../../node_modules/animate.css/animate";
+
 @import "vars";
 @import "fonts";
 @import "general";

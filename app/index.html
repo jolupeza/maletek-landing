@@ -165,10 +165,12 @@
       <div class="row justify-content-center">
         <div class="col-6">
           <form action="" class="Form mt-5">
-            <div class="form-group Form__group row">
+            <div class="form-group Form__group row has-feedback has-error">
               <label for="name" class="col-sm-3 col-form-label Form__label">Nombre</label>
               <div class="col-sm-9">
                 <input type="text" class="form-control Form__control" id="name" />
+                <i class="form-control-feedback"></i>
+                <small class="help-block">Por favor introduce un valor</small>
               </div>
             </div>
 
@@ -189,13 +191,15 @@
             <div class="form-group Form__group row">
               <label for="worksite" class="col-sm-3 col-form-label Form__label">Lugar de trabajo</label>
               <div class="col-sm-9">
-                <input type="text" class="form-control Form__control" id="email" />
+                <input type="text" class="form-control Form__control" id="worksite" />
               </div>
             </div>
 
             <p class="text-center">
-              <button type="submit" class="Button">Enviar</button>
+              <button type="submit" class="Button">Enviar <i class="Form__loader d-inline-block rotateIn animated infinite icon-refresh" id="js-form-contact-loader"></i></button>
             </p>
+
+            <div class="alert alert-danger text-center h4" id="js-form-contact-msg"></div>
           </form>
         </div>
       </div>
