@@ -1,0 +1,45 @@
+{
+  "name": "maletek-landing",
+  "version": "1.0.0",
+  "description": "Landing Maletek",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jolupeza/maletek-landing"
+  },
+  "keywords": [
+    "Maletek",
+    "Landing",
+    "Maquetación"
+  ],
+  "author": "José Pérez <joseluis@watson.pe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolupeza/maletek-landing/issues"
+  },
+  "homepage": "https://github.com/jolupeza/maletek-landing#README",
+  "devDependencies": {
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.1.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2",
+    "popper.js": "^1.12",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^11.1.0"
+  }
+}

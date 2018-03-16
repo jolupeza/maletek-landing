@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  color: $textColor;
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 300;
+  min-height: 100vh;
+  position: relative;
+}
+a {
+  transition: color .3s ease-in-out;
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+p {
+  font-size: 1.125rem;
+}
+.Title {
+  color: $firstColor;
+  font-family: $lato;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.Title__border {
+  display: inline-block;
+  position: relative;
+  &::after {
+    border-bottom: 5px solid $firstColor;
+    bottom: -10px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 190px;
+  }
+}

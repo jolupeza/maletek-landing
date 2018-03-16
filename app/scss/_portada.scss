@@ -1,0 +1,90 @@
+.Portada {
+  display: flex;
+  min-height: 100vh;
+}
+.Portada__left, .Portada__right {
+  background-size: 100%;
+  width: 50%;
+  .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+}
+.Portada__left {
+  background: transparent url('./../images/bg-slider-yellow.jpg') center 0 no-repeat;
+}
+.Portada__right {
+  background: transparent url('./../images/bg-slider-green.jpg') center 0 no-repeat;
+}
+.Portada__content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+.Portada__caption {
+  bottom: auto;
+  left: auto;
+  padding: 0;
+  position: relative;
+  right: auto;
+  text-align: left;
+  h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.Portada__left__caption {
+  margin-left: 10%;
+  h5 {
+    color: $firstColor;
+    font-size: 4rem;
+    font-style: italic;
+    position: relative;
+    span {
+      display: inline-block;
+      &::after {
+        border-bottom: 5px solid $firstColor;
+        content: "";
+        display: block;
+        width: 25%;
+      }
+    }
+  }
+  p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+.Portada__right__caption {
+  align-self: flex-end;
+  margin: 0 10% 5% 10%;
+  h5 {
+    border-left: 7px solid white;
+    font-size: 2.6rem;
+    padding-left: 1rem;
+  }
+}
+.Portada__right {
+  .carousel-item-next,
+  .active.carousel-item-right {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-next,
+      .active.carousel-item-right {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0); } }
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-prev,
+      .active.carousel-item-left {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0); } }
+}

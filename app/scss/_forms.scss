@@ -1,0 +1,18 @@
+.Form {
+}
+.Form__label {
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.Form__control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $textColor;
+  border-radius: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+  &:focus {
+    background-color: transparent;
+  }
+}

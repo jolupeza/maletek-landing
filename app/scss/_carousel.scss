@@ -1,0 +1,49 @@
+.Carousel {
+
+}
+.Carousel__content {
+  display: flex;
+  justify-content: space-between;
+}
+.Carousel__figure {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.Carousel__caption {
+  bottom: auto;
+  color: $textColor;
+  left: auto;
+  padding: 0;
+  position: relative;
+  right: auto;
+  text-align: left;
+  width: 60%;
+  h5 {
+    color: $secondColor;
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+  p {
+  }
+  ul {
+    margin-bottom: 5rem;
+    list-style: none;
+    padding-left: 0;
+    li {
+      span {
+        color: black;
+      }
+    }
+  }
+}
+.Carousel__control {
+  color: $textColor;
+  font-size: 1.375rem;
+  font-weight: 900;
+  opacity: 1;
+  width: auto;
+  &:focus, &:hover {
+    color: $thirdColor;
+  }
+}

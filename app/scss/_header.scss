@@ -1,0 +1,19 @@
+.Header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(black, .7);
+  padding: .2rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+.Header__phone {
+  [class^="icon-"] {
+    color: $firstColor;
+    font-size: 1.5rem;
+  }
+  a {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+}
