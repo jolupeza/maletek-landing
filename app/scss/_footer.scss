@@ -5,4 +5,8 @@
   position: absolute;
   width: 100%;
   z-index: 9;
+  &--page {
+    bottom: auto;
+    position: relative;
+  }
 }

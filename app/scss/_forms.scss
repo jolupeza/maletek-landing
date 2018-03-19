@@ -33,3 +33,15 @@
     }
   }
 }
+.form-check {
+  .Form__label {
+    font-weight: 400;
+    a {
+      color: $textColor;
+      font-weight: 700;
+      &:focus, &:hover {
+        color: $secondColor;
+      }
+    }
+  }
+}

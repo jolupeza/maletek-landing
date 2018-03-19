@@ -37,3 +37,21 @@ p {
     width: 190px;
   }
 }
+.ArrowTop {
+  background-color: $thirdColor;
+  border: none;
+  border-radius: 50%;
+  bottom: 3rem;
+  box-shadow: 2px 2px 4px rgba(black, .6);
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  position: fixed;
+  right: 3rem;
+  transition: background-color .3s ease-in;
+  z-index: 99;
+  &:focus, &:hover {
+    background-color: $secondColor;
+  }
+}

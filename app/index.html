@@ -202,6 +202,13 @@
               </div>
             </div>
 
+            <div class="form-group Form__group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="terms" id="terms" required data-fv-notempty-message="Debe aceptar los Términos y Condiciones" />
+                <label class="form-check-label Form__label" for="terms">Acepto los <a href="<?php echo home_url('terminos-y-condiciones-de-uso'); ?>" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a></label>
+              </div>
+            </div>
+
             <p class="text-center">
               <button type="submit" class="Button">Enviar <i class="Form__loader d-inline-block rotateIn animated infinite icon-refresh" id="js-form-contact-loader"></i></button>
             </p>
@@ -212,7 +219,7 @@
       </div>
     </div>
 
-    <footer class="Footer">
+    <footer class="Footer Footer--page">
       <h3 class="Footer__logo text-center">
         <a href="index.html" title="Maletek">
           <img src="images/logo-maletek-white.png" alt="Maletek" class="img-fluid" />
@@ -220,6 +227,8 @@
       </h3>
     </footer>
   </section>
+
+  <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button>
 
   <script src="js/min/bundle.js"></script>
 </body>
