@@ -18,25 +18,38 @@
 .Portada__right {
   background-image: url('./../images/bg-slider-green.jpg');
 }
+.Portada__figure {
+  width: 40%;
+}
 .Portada__content {
   align-items: center;
   display: flex;
   height: 100%;
-  justify-content: space-between;
+}
+.Portada__left__content {
+  justify-content: flex-end;
 }
 .Portada__caption {
   bottom: auto;
   left: auto;
   padding: 0;
-  position: relative;
   right: auto;
   text-align: left;
+  width: 50%;
   h5 {
     font-weight: 700;
     text-transform: uppercase;
   }
+  p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
 }
 .Portada__left__caption {
+  left: 0;
   margin-left: 10%;
   h5 {
     color: $firstColor;
@@ -53,17 +66,12 @@
       }
     }
   }
-  p {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 0;
-    text-transform: uppercase;
-  }
 }
 .Portada__right__caption {
   align-self: flex-end;
-  margin: 0 10% 5% 10%;
+  margin-bottom: 10%;
+  margin-right: 5%;
+  right: 0;
   h5 {
     border-left: 7px solid white;
     font-size: 2.6rem;
