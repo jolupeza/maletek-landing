@@ -21,6 +21,9 @@ p {
   font-family: $lato;
   font-size: 4rem;
   font-weight: 700;
+  @media screen and (max-width: 767px) {
+    font-size: 2rem;
+  }
 }
 .Title__border {
   display: inline-block;

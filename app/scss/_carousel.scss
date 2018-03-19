@@ -46,4 +46,10 @@
   &:focus, &:hover {
     color: $thirdColor;
   }
+  @media screen and (max-width: 991px) {
+    font-size: 6rem;
+    span {
+      display: none;
+    }
+  }
 }

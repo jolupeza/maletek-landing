@@ -8,10 +8,18 @@
   list-style: none;
   padding-left: 0;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   li {
     font-size: 1.625rem;
     font-weight: 400;
     margin-right: 2rem;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 1.25rem;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -28,10 +36,18 @@
       color: $textColor;
       padding: .5rem 1rem;
       transition: border .2s ease-out;
+      @media screen and (max-width: 991px) {
+        padding: 1rem;
+      }
       &:focus, &:hover {
         color: $secondColor;
         border: 1px solid $secondColor;
       }
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 1rem;
+      margin-right: 0;
+      width: 45%;
     }
   }
 }
