@@ -88,8 +88,8 @@ gulp.task('js-sync', ['compress'], () => {
 gulp.task('browsersync', ['style'], () => {
   sync.init({
     proxy: "maletek.landing",
-    browser: "firefox"
-    //browser: ["chrome", "firefox"]
+    browser: "google-chrome"
+    //browser: ["chrome", "firefox", "google-chrome"]
   });
 
   gulp.watch([config.template + '/*.html', config.scssDir + '/**/*.scss']).on('change', sync.reload);
