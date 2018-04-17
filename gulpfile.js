@@ -77,6 +77,7 @@ gulp.task('browserify', () => {
   return browserify(config.jsDir + '/src/main.js')
     .bundle()
     .pipe(transform('bundle.js'))
+    //.pipe(transform('bundle-nojquery.js'))
     .pipe(gulp.dest(config.jsDir + '/min/'))
 });
 
@@ -88,7 +89,7 @@ gulp.task('js-sync', ['compress'], () => {
 gulp.task('browsersync', ['style'], () => {
   sync.init({
     proxy: "maletek.landing",
-    browser: "google-chrome"
+    browser: "chrome"
     //browser: ["chrome", "firefox", "google-chrome"]
   });
 
