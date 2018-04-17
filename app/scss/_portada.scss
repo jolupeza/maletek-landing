@@ -27,13 +27,22 @@
       }
     }
     .Portada__caption {
-      width: 30%;
+      width: 40%;
       @media screen and (max-width: 991px) {
         width: 100%;
       }
     }
     .Portada__left__content {
-      justify-content: center;
+      justify-content: flex-end;
+      @media screen and (max-width: 991px) {
+        justify-content: center;
+      }
+    }
+    .Portada__figure {
+      margin-right: 20%;
+      @media screen and (max-width: 991px) {
+        margin-right: 0;
+      }
     }
   }
   .carousel-inner, .carousel-item {
