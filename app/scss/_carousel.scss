@@ -44,7 +44,7 @@
   opacity: 1;
   width: auto;
   &:focus, &:hover {
-    color: $thirdColor;
+    color: $firstColor;
   }
   @media screen and (max-width: 991px) {
     font-size: 6rem;

@@ -89,7 +89,7 @@ gulp.task('js-sync', ['compress'], () => {
 gulp.task('browsersync', ['style'], () => {
   sync.init({
     proxy: "maletek.landing",
-    browser: "chrome"
+    browser: "google-chrome"
     //browser: ["chrome", "firefox", "google-chrome"]
   });
 

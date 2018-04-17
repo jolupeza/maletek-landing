@@ -52,6 +52,6 @@ p {
   transition: background-color .3s ease-in;
   z-index: 99;
   &:focus, &:hover {
-    background-color: $secondColor;
+    background-color: $firstColor;
   }
 }
