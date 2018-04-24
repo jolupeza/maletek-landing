@@ -39,7 +39,10 @@
       }
     }
     .Portada__figure {
-      margin-right: 20%;
+      margin-right: 30%;
+      @media screen and (max-width: 1199px) {
+        margin-right: 5%;
+      }
       @media screen and (max-width: 991px) {
         margin-right: 0;
       }
